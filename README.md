@@ -25,6 +25,19 @@ This project implements a simple wallet service API using NestJS and TypeScript.
     ```
     The API will be available at `http://localhost:3000`.
 
+### 🧪 Running Unit Tests (Nice-to-Have)
+
+The service includes unit tests for the core business logic (`fundWallet`, `transferFunds`, and idempotency) to ensure balance integrity and error handling.
+
+To run the tests:
+
+```bash
+# Run all tests once
+npm run test 
+
+# Run tests in watch mode (helpful during development)
+npm run test:watch
+
 ## ⚙️ API Endpoints (Postman Collection)
 
 The base URL for all endpoints is `http://localhost:3000`.
