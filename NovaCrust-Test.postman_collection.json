@@ -25,7 +25,7 @@
 					"variable": [
 						{
 							"key": "id",
-							"value": "9b82aafd-9cd0-40d7-bbf0-8fba9627f17c"
+							"value": ""
 						}
 					]
 				}
@@ -89,7 +89,7 @@
 					"variable": [
 						{
 							"key": "id",
-							"value": "9b82aafd-9cd0-40d7-bbf0-8fba9627f17c"
+							"value": ""
 						}
 					]
 				}
@@ -103,7 +103,7 @@
 				"header": [
 					{
 						"key": "Idempotency-Key",
-						"value": "MY-Second-Key",
+						"value": "",
 						"type": "text"
 					}
 				],
@@ -131,7 +131,7 @@
 					"variable": [
 						{
 							"key": "id",
-							"value": "9b82aafd-9cd0-40d7-bbf0-8fba9627f17c"
+							"value": ""
 						}
 					]
 				}
