@@ -25,7 +25,7 @@ This project implements a simple wallet service API using NestJS and TypeScript.
     ```
     The API will be available at `http://localhost:3000`.
 
-### 🧪 Running Unit Tests (Nice-to-Have)
+### 🧪 Running Unit Tests
 
 The service includes unit tests for the core business logic (`fundWallet`, `transferFunds`, and idempotency) to ensure balance integrity and error handling.
 
