@@ -13,7 +13,7 @@ This project implements a simple wallet service API using NestJS and TypeScript.
 
 1.  **Clone the repository:**
     ```bash
-    git clone [this-repo](https://github.com/Bappa-Kamba/backend-role-quick-test.git)
+    git clone `[this-repo](https://github.com/Bappa-Kamba/backend-role-quick-test.git)`
     ```
 2.  **Install dependencies:**
     ```bash
@@ -37,6 +37,7 @@ npm run test
 
 # Run tests in watch mode (helpful during development)
 npm run test:watch
+```
 
 ## ⚙️ API Endpoints (Postman Collection)
 
