@@ -32,9 +32,9 @@ The base URL for all endpoints is `http://localhost:3000`.
 | Requirement | Method | Endpoint | Description | Request Body (JSON) | Params |
 | :--- | :--- | :--- | :--- | :--- |
 | **1. Create Wallet** | `POST` | `/wallets` | Creates a new wallet. | `{ "currency": "USD" }` (Optional) | N/A |
-| **4. Fetch Details** | `GET` | `/wallets/:id` | Retrieves wallet details and transaction history. | N/A | N/A |
-| **2. Fund Wallet** | `PATCH` | `/wallets/:id/fund` | Adds a positive amount to the wallet balance. | `{ "amount": 10000 }` | Idempotency-Key (Optional, in headers) |
-| **3. Transfer Funds** | `POST` | `/wallets/:id/transfer` | Transfers funds from `:id` to `receiverWalletId`. | `{ "receiverWalletId": "uuid-target", "amount": 5000 }` | Idempotency-Key (Optional, in headers)|
+| **2. Fetch Details** | `GET` | `/wallets/:id` | Retrieves wallet details and transaction history. | N/A | N/A |
+| **3. Fund Wallet** | `PATCH` | `/wallets/:id/fund` | Adds a positive amount to the wallet balance. | `{ "amount": 10000 }` | Idempotency-Key (Optional, in headers) |
+| **4. Transfer Funds** | `POST` | `/wallets/:id/transfer` | Transfers funds from `:id` to `receiverWalletId`. | `{ "receiverWalletId": "uuid-target", "amount": 5000 }` | Idempotency-Key (Optional, in headers)|
 
 > **Note on Amounts:** All monetary values (`balance` and `amount`) are stored and transferred in the **smallest currency unit (cents)** to avoid floating-point precision issues.
 It is converted to the main currency for display purposes
