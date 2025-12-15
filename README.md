@@ -2,6 +2,9 @@
 
 This project implements a simple wallet service API using NestJS and TypeScript. It adheres strictly to the requirements, focusing on a clean structure, correctness, and avoiding overengineering by utilizing in-memory storage for data.
 
+## Author
+ - [Attahiru Kamba](https://github.com/Bappa-Kamba)
+
 ## 🚀 Setup Instructions
 
 ### Prerequisites
