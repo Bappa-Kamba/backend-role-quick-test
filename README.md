@@ -17,11 +17,11 @@ This project implements a simple wallet service API using NestJS and TypeScript.
     ```
 2.  **Install dependencies:**
     ```bash
-    npm install (or any package manager of your choosing; pnpm, yarn)
+    pnpm install (or any package manager of your choosing; npm, yarn)
     ```
 3.  **Run the application (Development Mode):**
     ```bash
-    npm run start:dev
+    pnpm run start:dev
     ```
     The API will be available at `http://localhost:3000`.
 
