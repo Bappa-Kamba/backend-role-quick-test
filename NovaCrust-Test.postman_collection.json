@@ -1,0 +1,142 @@
+{
+	"info": {
+		"_postman_id": "c4fc25fd-1dfa-4d48-a011-2978ce8b4ac9",
+		"name": "NovaCrust-Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21760897"
+	},
+	"item": [
+		{
+			"name": "Get a Wallet",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/wallets/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"wallets",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "9b82aafd-9cd0-40d7-bbf0-8fba9627f17c"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create a Wallet",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"currency\": \"USD\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/wallets",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"wallets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fund a Wallet",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"amount\": 1000\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/wallets/:id/fund",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"wallets",
+						":id",
+						"fund"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "9b82aafd-9cd0-40d7-bbf0-8fba9627f17c"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Transfer Funds",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Idempotency-Key",
+						"value": "MY-Second-Key",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"amount\": 100,\n    \"receiverWalletId\": \"373c18c0-3e46-46d4-94c3-cd14cf79694f\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/wallets/:id/transfer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"wallets",
+						":id",
+						"transfer"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "9b82aafd-9cd0-40d7-bbf0-8fba9627f17c"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
