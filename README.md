@@ -12,8 +12,9 @@ This project implements a simple wallet service API using NestJS and TypeScript.
 ### Installation
 
 1.  **Clone the repository:**
+    [Repo](https://github.com/Bappa-Kamba/backend-role-quick-test.git)
     ```bash
-    git clone `[this-repo](https://github.com/Bappa-Kamba/backend-role-quick-test.git)`
+    git clone https://github.com/Bappa-Kamba/backend-role-quick-test.git
     ```
 2.  **Install dependencies:**
     ```bash
